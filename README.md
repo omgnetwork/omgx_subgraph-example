@@ -29,10 +29,12 @@ You'll need the following:
 Clone the the example repository, open it, and install nodejs packages with `yarn`:
 
 ```bash
+
 git clone git@github.com:omgnetwork/omgx_subgraph-example.git
 cd omgx_subgraph-example
 cd omgx-contract
 yarn install
+
 ```
 
 Copy the contract **abi** file into `omgx-contract/abis`.
@@ -84,14 +86,18 @@ type TokenPool @entity {
 
 ### Generate the schema and contract code
 
-```
+```bash
+
 yarn codegen
+
 ```
 
 or you can run the following command if you have installed the global `graph-cli`
 
-```
+```bash
+
 graph build
+
 ```
 
 The automcatically generated code is in `generated` folder.
@@ -106,23 +112,27 @@ Update the project name in `package.json` . The subgraph name needs to have the 
 
 ```json
 {
-	"scripts": {
-		"create:subgraph": "graph create --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME",
-    "deploy:subgraph": "graph deploy --ipfs https://graph.rinkeby.omgx.network:5001 --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME "
-	}
+    "scripts": {
+	"create:subgraph": "graph create --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME",
+        "deploy:subgraph": "graph deploy --ipfs https://graph.rinkeby.omgx.network:5001 --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME "
+   }
 }
 ```
 
 ```bash
+
 yarn create:subgraph
 yarn deploy:subgraph
+
 ```
 
 or you can directly run the following command if you have installed the global `graph-cli`
 
 ```bash
+
 graph create --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME
 graph deploy --ipfs https://graph.rinkeby.omgx.network:5001 --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME 
+
 ```
 
 > NOTE: The `https://graph.rinkeby.omgx.network:8020` endpoint is **private**. Please contact us if you want to deploy subgraphs.
