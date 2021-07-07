@@ -135,3 +135,6 @@ The deployment code is in `omg-L2LP` folder. You can access deployed subgraphs t
 
 The deployment code in `omg-TokenPool` folder. You can access deployed subgraphs through [L2TokenPoolSubgraph](https://graph.rinkeby.omgx.network/subgraphs/name/omgx/TokenPool ).
 
+## Known BUG
+
+* It can't fetch the events in the functions that send the messages from L2 to L1.
