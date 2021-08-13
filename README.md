@@ -119,11 +119,9 @@ The automcatically generated code is in `generated` folder.
 Update the project name in `package.json` . The subgraph name needs to have the format `PREFIX/NAME`.
 
 ```json
-{
-    "scripts": {
-	"create:subgraph": "graph create --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME",
-        "deploy:subgraph": "graph deploy --ipfs https://graph.rinkeby.omgx.network:5001 --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME "
-   }
+{  
+  "create:subgraph": "graph create --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME",
+  "deploy:subgraph": "graph deploy --ipfs https://graph.rinkeby.omgx.network:5001 --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME"
 }
 ```
 
