@@ -2,12 +2,20 @@
 
 ## OMGX Graph Node
 
+> Mainnet endpoint: https://graph.mainnet.omgx.network
+
+| **Port** | **Purpose**                               | **Routes**              | URL                                                          | **Permission** |
+| -------- | ----------------------------------------- | ----------------------- | ------------------------------------------------------------ | -------------- |
+| 8000     | GraphQL HTTP server                       | /subgraphs/name/.../... | https://graph.mainnet.omgx.network <br />https://graph.mainnet.omgx.network:8000 | Public         |
+| 8020     | JSON-RPC<br /> (for managing deployments) | /                       | https://graph.mainnet.omgx.network:8020                      | Private        |
+| 8030     | Subgraph indexing status API              | /graphql                | https://graph.mainnet.omgx.network:8030                      | Public         |
+| 8040     | Prometheus metrics                        | /metrics                | https://graph.mainnet.omgx.network:8040                      | Public         |
+
 > Rinkeby endpoint: https://graph.rinkeby.omgx.network
 
 | **Port** | **Purpose**                               | **Routes**              | URL                                                          | **Permission** |
 | -------- | ----------------------------------------- | ----------------------- | ------------------------------------------------------------ | -------------- |
 | 8000     | GraphQL HTTP server                       | /subgraphs/name/.../... | https://graph.rinkeby.omgx.network <br />https://graph.rinkeby.omgx.network:8000 | Public         |
-| 8001     | GraphQL WS                                | /subgraphs/name/.../... | https://graph.rinkeby.omgx.network:8001                      | Public         |
 | 8020     | JSON-RPC<br /> (for managing deployments) | /                       | https://graph.rinkeby.omgx.network:8020                      | Private        |
 | 8030     | Subgraph indexing status API              | /graphql                | https://graph.rinkeby.omgx.network:8030                      | Public         |
 | 8040     | Prometheus metrics                        | /metrics                | https://graph.rinkeby.omgx.network:8040                      | Public         |
