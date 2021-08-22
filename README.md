@@ -11,14 +11,14 @@
 | 8030     | Subgraph indexing status API              | /graphql                | https://graph.mainnet.omgx.network:8030                      | Public         |
 | 8040     | Prometheus metrics                        | /metrics                | https://graph.mainnet.omgx.network:8040                      | Public         |
 
-> Rinkeby endpoint: https://graph.rinkeby.omgx.network
+> Rinkeby endpoint: https://graph.boba.omgx.network
 
 | **Port** | **Purpose**                               | **Routes**              | URL                                                          | **Permission** |
 | -------- | ----------------------------------------- | ----------------------- | ------------------------------------------------------------ | -------------- |
-| 8000     | GraphQL HTTP server                       | /subgraphs/name/.../... | https://graph.rinkeby.omgx.network <br />https://graph.rinkeby.omgx.network:8000 | Public         |
-| 8020     | JSON-RPC<br /> (for managing deployments) | /                       | https://graph.rinkeby.omgx.network:8020                      | Private        |
-| 8030     | Subgraph indexing status API              | /graphql                | https://graph.rinkeby.omgx.network:8030                      | Public         |
-| 8040     | Prometheus metrics                        | /metrics                | https://graph.rinkeby.omgx.network:8040                      | Public         |
+| 8000     | GraphQL HTTP server                       | /subgraphs/name/.../... | https://graph.rinkeby.boba.network <br />https://graph.rinkeby.boba.network:8000 | Public         |
+| 8020     | JSON-RPC<br /> (for managing deployments) | /                       | https://graph.rinkeby.boba.network:8020                      | Private        |
+| 8030     | Subgraph indexing status API              | /graphql                | https://graph.rinkeby.boba.network:8030                      | Public         |
+| 8040     | Prometheus metrics                        | /metrics                | https://graph.rinkeby.boba.network:8040                      | Public         |
 
 ## Deploy Subgraph to OMGX Graph Node
 
