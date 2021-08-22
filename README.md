@@ -2,14 +2,14 @@
 
 ## OMGX Graph Node
 
-> Mainnet endpoint: https://graph.mainnet.omgx.network
+> Mainnet endpoint: https://graph.mainnet.boba.network
 
 | **Port** | **Purpose**                               | **Routes**              | URL                                                          | **Permission** |
 | -------- | ----------------------------------------- | ----------------------- | ------------------------------------------------------------ | -------------- |
-| 8000     | GraphQL HTTP server                       | /subgraphs/name/.../... | https://graph.mainnet.omgx.network <br />https://graph.mainnet.omgx.network:8000 | Public         |
-| 8020     | JSON-RPC<br /> (for managing deployments) | /                       | https://graph.mainnet.omgx.network:8020                      | Private        |
-| 8030     | Subgraph indexing status API              | /graphql                | https://graph.mainnet.omgx.network:8030                      | Public         |
-| 8040     | Prometheus metrics                        | /metrics                | https://graph.mainnet.omgx.network:8040                      | Public         |
+| 8000     | GraphQL HTTP server                       | /subgraphs/name/.../... | https://graph.mainnet.boba.network <br />https://graph.mainnet.boba.network:8000 | Public         |
+| 8020     | JSON-RPC<br /> (for managing deployments) | /                       | https://graph.mainnet.boba.network:8020                      | Private        |
+| 8030     | Subgraph indexing status API              | /graphql                | https://graph.mainnet.boba.network:8030                      | Public         |
+| 8040     | Prometheus metrics                        | /metrics                | https://graph.mainnet.boba.network:8040                      | Public         |
 
 > Rinkeby endpoint: https://graph.boba.omgx.network
 
@@ -120,8 +120,8 @@ Update the project name in `package.json` . The subgraph name needs to have the 
 
 ```json
 {  
-  "create:subgraph": "graph create --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME",
-  "deploy:subgraph": "graph deploy --ipfs https://graph.rinkeby.omgx.network:5001 --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME"
+  "create:subgraph": "graph create --node https://graph.rinkeby.boba.network:8020 PREFIX/NAME",
+  "deploy:subgraph": "graph deploy --ipfs https://graph.rinkeby.boba.network:5001 --node https://graph.rinkeby.boba.network:8020 PREFIX/NAME"
 }
 ```
 
@@ -136,8 +136,8 @@ or you can directly run the following command if you have installed the global `
 
 ```bash
 
-graph create --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME
-graph deploy --ipfs https://graph.rinkeby.omgx.network:5001 --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME 
+graph create --node https://graph.rinkeby.boba.network:8020 PREFIX/NAME
+graph deploy --ipfs https://graph.rinkeby.boba.network:5001 --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME 
 
 ```
 
