@@ -11,7 +11,7 @@
 | 8030     | Subgraph indexing status API              | /graphql                | https://graph.mainnet.boba.network:8030                      | Public         |
 | 8040     | Prometheus metrics                        | /metrics                | https://graph.mainnet.boba.network:8040                      | Public         |
 
-> Rinkeby endpoint: https://graph.boba.omgx.network
+> Rinkeby endpoint: https://graph.rinkeby.boba.network
 
 | **Port** | **Purpose**                               | **Routes**              | URL                                                          | **Permission** |
 | -------- | ----------------------------------------- | ----------------------- | ------------------------------------------------------------ | -------------- |
